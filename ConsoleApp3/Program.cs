@@ -13,7 +13,7 @@ namespace ConsoleApp3
         {
             double Sn(double x, int i = 6)
             {
-                if (i < 0)
+                if (i <= 1)
                 {
                     return 1 / x;
                 }
