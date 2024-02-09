@@ -15,13 +15,14 @@ namespace ConsoleApp3
             {
                 if (i < 0)
                 {
-                    return 0;
+                    return 1 / x;
                 }
                 else
                 {
                     return i / Pow(x, i) + Sn(x, --i);
                 }
             }
+
             Console.Write("Введите число(x) ");
             double X = double.Parse(Console.ReadLine());
             Console.WriteLine($"Ответ: {Sn(X):f3}");
